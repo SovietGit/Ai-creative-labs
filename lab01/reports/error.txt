@@ -1,0 +1,11 @@
+# Демонстрация типичной ошибки: seed не задан (выполнено 2026-09-30 15:30:29 UTC)
+> python src\lab01_generator.py --out ..\artifacts\no_seed_1  (запуск 1)
+ПРЕДУПРЕЖДЕНИЕ: seed не задан, использован 1978357804 — результат не воспроизводится
+sha256_pixels=3262043de7465fa5bc481b0e21825179f7d7fbdf220fc1aa87118faa420d9ba1 seed=1978357804
+> python src\lab01_generator.py --out ..\artifacts\no_seed_2  (запуск 2)
+ПРЕДУПРЕЖДЕНИЕ: seed не задан, использован 1118058868 — результат не воспроизводится
+sha256_pixels=e792bd49f61b07c55c2ef52de8e2c84373159bbac428c4ee2a6704e91f2abe5e seed=1118058868
+> python src\lab01_generator.py --seed 101 --out ..\artifacts\seed1  (запуск 1)
+sha256_pixels=93fae5913d79728429ddcdf533063672739fd51e5afa6a7ac243e3e6a80d290b seed=101
+> python src\lab01_generator.py --seed 101 --out ..\artifacts\seed2  (запуск 2)
+sha256_pixels=93fae5913d79728429ddcdf533063672739fd51e5afa6a7ac243e3e6a80d290b seed=101

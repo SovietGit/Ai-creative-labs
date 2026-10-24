@@ -1,0 +1,26 @@
+[
+  {
+    "rule": "R4",
+    "severity": "error",
+    "item": "item01",
+    "message": "CC-BY-ND-4.0: условие NoDerivatives запрещает производные, а сценарий их создаёт"
+  },
+  {
+    "rule": "R4",
+    "severity": "error",
+    "item": "item04",
+    "message": "CC-BY-ND-4.0: условие NoDerivatives запрещает производные, а сценарий их создаёт"
+  },
+  {
+    "rule": "R10",
+    "severity": "warning",
+    "item": "item08",
+    "message": "не указан правообладатель"
+  },
+  {
+    "rule": "R4",
+    "severity": "error",
+    "item": "item12",
+    "message": "CC-BY-ND-4.0: условие NoDerivatives запрещает производные, а сценарий их создаёт"
+  }
+]

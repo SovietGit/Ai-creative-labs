@@ -1,0 +1,16 @@
+# ===== Виртуальное окружение =====
+.venv/
+venv/
+env/
+ENV/
+
+# ===== Настройки VS Code =====
+.vscode/
+
+# ===== Кэш =====
+__pycache__
+
+# ===== Кэш весов модели (Hugging Face) =====
+cache/
+.cache/
+huggingface/

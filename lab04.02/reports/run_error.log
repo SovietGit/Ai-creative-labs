@@ -1,0 +1,10 @@
+Loading pipeline components...:   0%|          | 0/5 [00:00<?, ?it/s]`torch_dtype` is deprecated! Use `dtype` instead!
+Loading pipeline components...:  40%|####      | 2/5 [00:00<00:00, 14.35it/s]Loading pipeline components...: 100%|##########| 5/5 [00:00<00:00, 21.48it/s]
+You have disabled the safety checker for <class 'diffusers.pipelines.stable_diffusion.pipeline_stable_diffusion.StableDiffusionPipeline'> by passing `safety_checker=None`. Ensure that you abide to the conditions of the Stable Diffusion license and do not expose unfiltered results in services or applications open to the public. Both the diffusers team and Hugging Face strongly recommend to keep the safety filter enabled in all public facing circumstances, disabling it only for use-cases that involve analyzing network behavior or auditing its results. For more information, please have a look at https://github.com/huggingface/diffusers/pull/254 .
+Traceback (most recent call last):
+  File "D:\Shedule\vus\לאדא\ָָ ג Êׂ\כאב1\ai-creative-lab01\src\generate_once.py", line 29, in <module>
+    generator = torch.Generator(device="cuda").manual_seed(SEED)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+torch.AcceleratorError: CUDA error: CUDA driver version is insufficient for CUDA runtime version
+Search for `cudaErrorInsufficientDriver' in https://docs.nvidia.com/cuda/cuda-runtime-api/group__CUDART__TYPES.html for more information.
+Device-side assertions were explicitly omitted for this error check; the error probably arose while initializing the DSA handlers.

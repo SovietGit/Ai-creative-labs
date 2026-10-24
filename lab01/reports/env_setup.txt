@@ -1,0 +1,11 @@
+# Журнал подготовки среды (Windows CMD), выполнен 2026-09-30 16:25:30 UTC
+> python --version
+Python 3.11.5
+> python -m venv .venv
+(код возврата 0)
+> .venv\Scripts\python -m pip --version
+pip 23.2.1 from <папка_проекта>\.venv\Lib\site-packages\pip (python 3.11)
+> .venv\Scripts\python -m pip freeze > requirements.txt (сторонних пакетов нет — вывод пуст)
+[строк в выводе: 0]
+> .venv\Scripts\python -c "import lab01_generator" из папки src
+импорт успешен, версия скрипта 1.0
