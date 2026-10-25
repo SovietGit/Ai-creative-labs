@@ -1,0 +1,14 @@
+{
+  "variant": 15,
+  "ctx": 3,
+  "cond": "generator_device",
+  "seed": 1015,
+  "sha_a": "bd07f369e95e6616d677b5f69590fb5363fadcb295efc4c55b37b2c683a776c3",
+  "sha_b": "0e30c7222c63d3151aab7e6aba3acfe77db5173de5c619b57b42b2c23cdbf11c",
+  "pixel_equal": false,
+  "max_diff": 248,
+  "psnr": 11.62218514732884,
+  "verdict": "different",
+  "seconds": 0.68,
+  "psnr_fixed_noise": null
+}

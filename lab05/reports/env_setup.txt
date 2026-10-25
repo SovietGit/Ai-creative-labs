@@ -1,0 +1,18 @@
+# Журнал подготовки среды (Google Colab), выполнен 2026-10-24 23:24:45 UTC
+> !nvidia-smi --query-gpu=name,memory.total --format=csv
+name, memory.total [MiB]
+Tesla T4, 15360 MiB
+> !pip list 2>/dev/null | grep -i -E "^(torch|diffusers|transformers|pillow)"
+diffusers                             0.41.0
+pillow                                11.3.0
+torch                                 2.11.0+cu130
+torchao                               0.10.0
+torchaudio                            2.11.0+cu130
+torchcodec                            0.11.0+cu130
+torchdata                             0.11.0
+torchsummary                          1.5.1
+torchtune                             0.6.1
+torchvision                           0.26.0+cu130
+transformers                          5.20.2
+> %%writefile lab05_lib.py (Код файла lab05_lib.py)
+Writing lab05_lib.py
