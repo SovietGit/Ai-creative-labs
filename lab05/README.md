@@ -37,6 +37,8 @@
 **Пакеты**: Diffusers, Pillow, Torch, Torchao, Torchaudio, Torchcodec, Torchdata, Torchsummary, Torchtune, Torchvision, Transformers 
 **Учебная библиотека**: lab05_lib.py
 
+**Примечание**: Откат diffusers до версии `0.39.0` сделан для обхода ошибки: `cannot import name 'FqnToConfig' from 'torchao.quantization'`.
+
 ## 5. Ход работы
 
 Перед выполнением основной работы подготовить среду выполнения
