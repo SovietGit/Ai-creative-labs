@@ -1,0 +1,22 @@
+# Журнал подготовки среды (Google Colab), выполнен 2026-11-04 19:27:30 UTC
+> !nvidia-smi --query-gpu=name,memory.total --format=csv
+name, memory.total [MiB]
+Tesla T4, 15360 MiB
+> print("torch:", torch.__version__, "| CUDA:", torch.cuda.is_available())
+torch: 2.11.0+cu130 | CUDA: True
+> %%writefile lab07_lib.py (Код файла lab07_lib.py)
+Writing lab07_lib.py
+> %%writefile lab07_demo.py (Код файла lab07_demo.py с указанием N:15)
+A: {'arch': 'conv', 'd': 8, 'loss': 'mse', 'noise': 0.0, 'eval_noise': 0.0, 'n_train': 4096, 'epochs': 20}
+B: {'arch': 'dense', 'd': 8, 'loss': 'mse', 'noise': 0.0, 'eval_noise': 0.0, 'n_train': 4096, 'epochs': 20}
+psnr     A=  23.119 s= 0.308 B=  22.880 d=  -0.239 |d|/s=   0.78 2s=нет
+gap      A=   0.023 s= 0.004 B=   0.111 d=  +0.088 |d|/s=  19.60 2s=да
+params   A= 101.035 s= 0.000 B=1580.552 d=+1479.517 |d|/s=    inf 2s=да
+seconds  A=   1.747 s= 0.086 B=   1.184 d=  -0.563 |d|/s=   6.52 2s=да
+эталон «средняя картинка», PSNR на тесте: 16.763
+d=1: PSNR = 19.60 дБ (по seed: 19.63, 19.66, 19.51)
+d=2: PSNR = 21.43 дБ (по seed: 21.42, 21.54, 21.34)
+d=3: PSNR = 22.71 дБ (по seed: 22.45, 22.33, 23.34)
+d=4: PSNR = 23.26 дБ (по seed: 23.33, 23.29, 23.16)
+d=8: PSNR = 23.18 дБ (по seed: 23.34, 23.52, 22.69)
+Сгенерированное изображение 
