@@ -1,0 +1,13 @@
+# Журнал подготовки среды (Engee), выполнен 2026-11-05 17:32:30 UTC
+> PY = "/user/.user_venvs/py3.11/bin/python3"
+> run(`$PY -c "import torch; print(torch.__version__, torch.cuda.is_available())"`)
+2.15.0+cpu
+> using SHA
+> cd("/user/ИИ в КТ/LR08")
+> bytes2hex(sha256(read("lab08_lib.py")))
+"f414c49bd0df4eb3aae1f822b29ef2eb112979afc078b26bc65645fd3f43fe9f"
+> cd("/user/ИИ в КТ/LR08")
+> run(`$PY lab08_demo.py`)
+torch - 2.15.0+cpu
+julia - 1.12.6
+время обучения ~ 20 мин
