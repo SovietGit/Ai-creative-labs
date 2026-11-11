@@ -1,0 +1,47 @@
+[
+  {
+    "subject": "Connected constellation of luminous nodes",
+    "setting": "Dark scientific exhibition poster background",
+    "style": "flat vector illustration",
+    "lighting": "subtle luminous glow",
+    "palette": ["blue", "white", "black"],
+    "composition": "centered",
+    "avoid": ["logo"]
+  },
+  {
+    "subject": "Large crystals seen under a microscope",
+    "setting": "Microscopic crystalline world",
+    "style": "macro photography",
+    "lighting": "cool diffused lighting",
+    "palette": ["blue", "teal", "white"],
+    "composition": "close-up",
+    "avoid": []
+  },
+  {
+    "subject": "Nebula with a solitary space probe",
+    "setting": "Deep space",
+    "style": "photorealistic",
+    "lighting": "soft cosmic glow",
+    "palette": ["blue", "purple", "black"],
+    "composition": "symmetrical",
+    "avoid": []
+  },
+  {
+    "subject": "Abstract glowing double helix spiral",
+    "setting": "Dark exhibition catalog cover",
+    "style": "3D render",
+    "lighting": "glowing line illumination",
+    "palette": ["blue", "purple", "white"],
+    "composition": "centered",
+    "avoid": []
+  },
+  {
+    "subject": "Solar panels and wind turbines at sunset",
+    "setting": "Open renewable energy landscape",
+    "style": "photorealistic",
+    "lighting": "warm sunset light",
+    "palette": ["orange", "amber", "blue"],
+    "composition": "wide negative space",
+    "avoid": []
+  }
+]

@@ -1,0 +1,47 @@
+[
+  {
+    "subject": "constellation of connected luminous nodes",
+    "setting": "dark exhibition backdrop",
+    "style": "minimal geometric",
+    "lighting": "subtle luminous glow",
+    "palette": ["white", "blue", "black"],
+    "composition": "centered",
+    "avoid": ["logo"]
+  },
+  {
+    "subject": "large crystals viewed under a microscope",
+    "setting": "abstract microscopic environment",
+    "style": "macro photography",
+    "lighting": "cool diffused light",
+    "palette": ["blue", "teal", "purple"],
+    "composition": "close-up",
+    "avoid": []
+  },
+  {
+    "subject": "solitary probe near a glowing nebula",
+    "setting": "deep space",
+    "style": "photorealistic",
+    "lighting": "faint nebula glow",
+    "palette": ["blue", "black"],
+    "composition": "symmetrical",
+    "avoid": []
+  },
+  {
+    "subject": "abstract spiral DNA with glowing lines",
+    "setting": "dark exhibition backdrop",
+    "style": "3D render",
+    "lighting": "soft luminous glow",
+    "palette": ["blue", "purple", "white"],
+    "composition": "centered",
+    "avoid": []
+  },
+  {
+    "subject": "solar panels and wind turbines",
+    "setting": "open landscape at sunset",
+    "style": "photorealistic",
+    "lighting": "warm sunset light",
+    "palette": ["orange", "yellow", "blue"],
+    "composition": "wide negative space",
+    "avoid": []
+  }
+]

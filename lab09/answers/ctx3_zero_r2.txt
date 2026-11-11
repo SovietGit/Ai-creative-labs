@@ -1,0 +1,47 @@
+[
+  {
+    "subject": "Constellation of interconnected scientific nodes",
+    "setting": "dark exhibition poster background",
+    "style": "minimal geometric",
+    "lighting": "subtle luminous glow",
+    "palette": ["black", "white", "blue"],
+    "composition": "centered",
+    "avoid": ["logo"]
+  },
+  {
+    "subject": "Large crystals viewed under a microscope",
+    "setting": "microscopic laboratory view",
+    "style": "macro photography",
+    "lighting": "cool diffused light",
+    "palette": ["blue", "teal", "purple"],
+    "composition": "close-up",
+    "avoid": []
+  },
+  {
+    "subject": "Nebula with a solitary space probe",
+    "setting": "deep space",
+    "style": "photorealistic",
+    "lighting": "soft cosmic glow",
+    "palette": ["blue", "black"],
+    "composition": "symmetrical",
+    "avoid": []
+  },
+  {
+    "subject": "Abstract spiral DNA structure",
+    "setting": "dark exhibition background",
+    "style": "3D render",
+    "lighting": "glowing luminous lines",
+    "palette": ["blue", "purple", "white"],
+    "composition": "centered",
+    "avoid": []
+  },
+  {
+    "subject": "Solar panels and wind turbines at sunset",
+    "setting": "open renewable energy landscape",
+    "style": "3D render",
+    "lighting": "warm sunset glow",
+    "palette": ["orange", "amber", "yellow"],
+    "composition": "wide negative space",
+    "avoid": []
+  }
+]

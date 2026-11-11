@@ -1,0 +1,18 @@
+# Журнал подготовки среды (Engee), выполнен 2026-11-10 21:59:30 UTC
+Создана папка "LR09" и в нее загружены 3 скрипта из библиотеки университета: "lab09_lib.py", "lab09_lim.py", "run_lr09.py".
+```bash 
+pip install "diffusers==0.32.2" "transformers<5" 
+```
+Вывод: Установленные библиотеки
+```python
+import torch, diffusers, transformers
+print(torch.__version__, diffusers.__version__, transformers.__version__)
+```
+Вывод: 2.4.1+cpu 0.32.2 4.57.6
+```julia
+cd("/user/ИИ в КТ/LR09")  # ваша папка
+PY = "/user/.user_venvs/py3.11/bin/python3"
+run(pipeline(`$PY -c "import lab09_lib as L; pipe = L.load_pipe(); clip = L.load_clip(); print(L.variant_summary(pipe, clip, 15))"`,
+             stdout="out9_15.txt", stderr="err9_15.txt"), wait=false)
+```
+Вывод: создание двух документов: err9_15.txt, out9_15.txt

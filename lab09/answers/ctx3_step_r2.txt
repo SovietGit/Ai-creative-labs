@@ -1,0 +1,53 @@
+Предмет: созвездие соединённых узлов; стиль: минималистичная геометрия; цвета: тёмный фон, белый и голубой; ограничение: без логотипов.
+Предмет: крупные кристаллы под микроскопом; стиль: макрофотография; цвета: холодная гамма; ограничение: без красного и оранжевого.
+Предмет: туманность и одинокий зонд; стиль: фотореализм; цвета: глубокий синий; ограничение: симметрия.
+Предмет: абстрактная спираль ДНК со светящимися линиями; стиль: 3D-рендер; цвета: ровно три — голубой, фиолетовый и белый; ограничение: тёмный фон.
+Предмет: солнечные панели и ветряки; стиль: фотореализм; цвета: закатная гамма; ограничение: широкая композиция.
+
+[
+  {
+    "subject": "Constellation of connected luminous nodes",
+    "setting": "Dark scientific exhibition poster background",
+    "style": "minimal geometric",
+    "lighting": "Subtle luminous line glow",
+    "palette": ["blue", "white", "black"],
+    "composition": "centered",
+    "avoid": ["logo"]
+  },
+  {
+    "subject": "Large microscopic mineral crystals",
+    "setting": "Microscope-view abstract micro-world",
+    "style": "macro photography",
+    "lighting": "Cool diffused laboratory light",
+    "palette": ["blue", "teal", "purple"],
+    "composition": "close-up",
+    "avoid": []
+  },
+  {
+    "subject": "A lone probe near a nebula",
+    "setting": "Deep space",
+    "style": "photorealistic",
+    "lighting": "Soft cosmic glow",
+    "palette": ["blue", "black"],
+    "composition": "symmetrical",
+    "avoid": []
+  },
+  {
+    "subject": "Abstract spiral DNA with glowing lines",
+    "setting": "Dark exhibition catalog cover",
+    "style": "3D render",
+    "lighting": "Glowing line illumination",
+    "palette": ["blue", "purple", "white"],
+    "composition": "centered",
+    "avoid": []
+  },
+  {
+    "subject": "Solar panels and wind turbines",
+    "setting": "Open landscape at sunset",
+    "style": "photorealistic",
+    "lighting": "Warm sunset light",
+    "palette": ["orange", "yellow", "blue"],
+    "composition": "wide negative space",
+    "avoid": []
+  }
+]

@@ -1,0 +1,53 @@
+Предмет: созвездие из соединённых узлов; стиль: плоская векторная иллюстрация; цвета: тёмный фон, белый и голубой; ограничение: без логотипов.
+Предмет: крупные кристаллы под микроскопом; стиль: макрофотография; цвета: холодная гамма; ограничение: не использовать красный и оранжевый.
+Предмет: туманность и одинокий зонд; стиль: фотореализм; цвета: глубокий синий; композиция: симметричная.
+Предмет: абстрактная спираль ДНК; стиль: 3D-рендер; цвета: ровно три — голубой, фиолетовый и белый; фон: тёмный, светящиеся линии.
+Предмет: солнечные панели и ветряки; стиль: фотореализм; цвета: закатные; композиция: широкая.
+
+[
+  {
+    "subject": "Constellation of interconnected nodes",
+    "setting": "dark scientific exhibition poster background",
+    "style": "flat vector illustration",
+    "lighting": "subtle luminous glow",
+    "palette": ["black", "white", "blue"],
+    "composition": "centered",
+    "avoid": ["logo"]
+  },
+  {
+    "subject": "Large crystals seen under a microscope",
+    "setting": "abstract microscopic field",
+    "style": "macro photography",
+    "lighting": "cool diffuse illumination",
+    "palette": ["blue", "teal", "purple"],
+    "composition": "close-up",
+    "avoid": []
+  },
+  {
+    "subject": "Nebula with a solitary space probe",
+    "setting": "deep space",
+    "style": "photorealistic",
+    "lighting": "dramatic cosmic glow",
+    "palette": ["blue", "purple", "black"],
+    "composition": "symmetrical",
+    "avoid": []
+  },
+  {
+    "subject": "Abstract spiraling DNA strands",
+    "setting": "dark exhibition catalog cover",
+    "style": "3D render",
+    "lighting": "glowing line illumination",
+    "palette": ["blue", "purple", "white"],
+    "composition": "centered",
+    "avoid": []
+  },
+  {
+    "subject": "Solar panels and wind turbines",
+    "setting": "open landscape at sunset",
+    "style": "photorealistic",
+    "lighting": "warm sunset glow",
+    "palette": ["orange", "yellow", "blue"],
+    "composition": "wide negative space",
+    "avoid": []
+  }
+]

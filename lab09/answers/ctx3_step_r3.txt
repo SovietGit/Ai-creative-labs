@@ -1,0 +1,53 @@
+Предмет: созвездие соединённых узлов; стиль: плоская векторная иллюстрация; цвета: белый, голубой, тёмный фон; ограничение: без логотипов.
+Предмет: крупные кристаллы под микроскопом; стиль: макрофотография; цвета: холодная гамма; ограничения: не использовать красный и оранжевый.
+Предмет: туманность и одинокий зонд; стиль: не указан; цвет: глубокий синий; композиция: симметричная.
+Предмет: абстрактная спираль ДНК; стиль: не указан; цвета: ровно три — голубой, фиолетовый и белый; фон: тёмный; линии: светящиеся.
+Предмет: солнечные панели и ветряки; стиль: не указан; цвета: не указаны; композиция: широкая; фон: закат.
+
+[
+  {
+    "subject": "Connected-node constellation for a science exhibition poster",
+    "setting": "Dark exhibition poster background",
+    "style": "flat vector illustration",
+    "lighting": "Subtle luminous glow",
+    "palette": ["blue", "white", "black"],
+    "composition": "centered",
+    "avoid": ["logo"]
+  },
+  {
+    "subject": "Large microscopic crystals for a micro-world exhibition poster",
+    "setting": "Microscope view of crystalline structures",
+    "style": "macro photography",
+    "lighting": "Cool diffused illumination",
+    "palette": ["blue", "teal", "white"],
+    "composition": "close-up",
+    "avoid": []
+  },
+  {
+    "subject": "A lone probe beside a cosmic nebula",
+    "setting": "Deep space starfield",
+    "style": "photorealistic",
+    "lighting": "Soft nebular glow",
+    "palette": ["blue", "black", "white"],
+    "composition": "symmetrical",
+    "avoid": []
+  },
+  {
+    "subject": "Abstract DNA double helix with glowing lines",
+    "setting": "Dark exhibition catalogue cover",
+    "style": "3D render",
+    "lighting": "Luminous edge lighting",
+    "palette": ["blue", "purple", "white"],
+    "composition": "centered",
+    "avoid": []
+  },
+  {
+    "subject": "Solar panels and wind turbines at sunset",
+    "setting": "Renewable energy landscape at sunset",
+    "style": "photorealistic",
+    "lighting": "Warm sunset glow",
+    "palette": ["orange", "yellow", "blue"],
+    "composition": "wide negative space",
+    "avoid": []
+  }
+]

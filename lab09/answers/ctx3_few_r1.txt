@@ -1,0 +1,47 @@
+[
+  {
+    "subject": "scientific constellation of connected luminous nodes",
+    "setting": "dark exhibition poster background",
+    "style": "minimal geometric",
+    "lighting": "subtle luminous glow",
+    "palette": ["black", "white", "blue"],
+    "composition": "centered",
+    "avoid": ["logo"]
+  },
+  {
+    "subject": "magnified large crystals under a microscope",
+    "setting": "microscopic crystalline landscape",
+    "style": "macro photography",
+    "lighting": "cool diffuse illumination",
+    "palette": ["blue", "teal", "purple"],
+    "composition": "close-up",
+    "avoid": []
+  },
+  {
+    "subject": "solitary space probe near a nebula",
+    "setting": "deep outer space",
+    "style": "3D render",
+    "lighting": "soft nebula glow",
+    "palette": ["blue", "purple", "black"],
+    "composition": "symmetrical",
+    "avoid": []
+  },
+  {
+    "subject": "abstract spiraling DNA strand",
+    "setting": "dark exhibition catalog cover",
+    "style": "3D render",
+    "lighting": "glowing luminous lines",
+    "palette": ["blue", "purple", "white"],
+    "composition": "centered",
+    "avoid": []
+  },
+  {
+    "subject": "solar panels and wind turbines",
+    "setting": "open renewable energy landscape at sunset",
+    "style": "photorealistic",
+    "lighting": "warm sunset light",
+    "palette": ["orange", "amber", "blue"],
+    "composition": "wide negative space",
+    "avoid": []
+  }
+]

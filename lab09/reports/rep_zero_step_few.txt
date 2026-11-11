@@ -1,0 +1,98 @@
+ctx3_zero_r1.txt = {
+ "parsed": true,
+ "fenced": false,
+ "n": 5,
+ "k1": 1.0,
+ "k2": 1.0,
+ "k3": 1.0,
+ "errors": []
+}
+ctx3_zero_r2.txt = {
+ "parsed": true,
+ "fenced": false,
+ "n": 5,
+ "k1": 1.0,
+ "k2": 1.0,
+ "k3": 1.0,
+ "errors": []
+}
+ctx3_zero_r3.txt = {
+ "parsed": true,
+ "fenced": false,
+ "n": 5,
+ "k1": 1.0,
+ "k2": 1.0,
+ "k3": 1.0,
+ "errors": []
+}
+
+ctx3_few_r1.txt = {
+ "parsed": true,
+ "fenced": false,
+ "n": 5,
+ "k1": 1.0,
+ "k2": 1.0,
+ "k3": 1.0,
+ "errors": []
+}
+ctx3_few_r2.txt = {
+ "parsed": true,
+ "fenced": false,
+ "n": 5,
+ "k1": 1.0,
+ "k2": 1.0,
+ "k3": 1.0,
+ "errors": []
+}
+ctx3_few_r3.txt = {
+ "parsed": true,
+ "fenced": false,
+ "n": 5,
+ "k1": 1.0,
+ "k2": 1.0,
+ "k3": 1.0,
+ "errors": []
+}
+ctx3_step_r1.txt = {
+ "parsed": true,
+ "fenced": false,
+ "n": 5,
+ "k1": 1.0,
+ "k2": 1.0,
+ "k3": 1.0,
+ "errors": []
+}
+ctx3_step_r1.txt = {
+ "parsed": true,
+ "fenced": false,
+ "n": 5,
+ "k1": 1.0,
+ "k2": 1.0,
+ "k3": 1.0,
+ "errors": []
+}
+ctx3_step_r1.txt = {
+ "parsed": true,
+ "fenced": false,
+ "n": 5,
+ "k1": 1.0,
+ "k2": 1.0,
+ "k3": 1.0,
+ "errors": []
+}
+
+для файлов step_:
+Файлов: 3
+K4 (общая): 0.9333333333333333
+
+для файлов few_:
+Файлов: 3
+K4 (общая): 0.8666666666666667
+
+для файлов zero_:
+Файлов: 3
+K4 (общая): 0.8
+
+для всех файлов:
+Файлов: 9
+K4 (общая): 0.8277777777777777
