@@ -1,5 +1,6 @@
 # Лабораторная работа № 5. Запуск открытой модели text-to-image
 
+Автор: Стукалов А.А.
 Вариант 15.
 
 ## 1. Контекст варианта
@@ -30,12 +31,12 @@
 
 ## 4. Среда и версия
 
-**Дата**: 2026-10-25
-**Версия окружения Colab**: 2026.07
-**Версия Python**: v"3.13.16"
-**Испольуемый процессор**: графический процессор T4
-**Пакеты**: Diffusers, Pillow, Torch, Torchao, Torchaudio, Torchcodec, Torchdata, Torchsummary, Torchtune, Torchvision, Transformers 
-**Учебная библиотека**: lab05_lib.py
+- **Дата**: 2026-10-25
+- **Версия окружения Colab**: 2026.07
+- **Версия Python**: v"3.13.16"
+- **Испольуемый процессор**: графический процессор T4
+- **Пакеты**: Diffusers, Pillow, Torch, Torchao, Torchaudio, Torchcodec, Torchdata, Torchsummary, - - - Torchtune, Torchvision, Transformers 
+- **Учебная библиотека**: lab05_lib.py
 
 **Примечание**: Откат diffusers до версии `0.39.0` сделан для обхода ошибки: `cannot import name 'FqnToConfig' from 'torchao.quantization'`.
 
