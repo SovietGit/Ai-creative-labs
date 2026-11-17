@@ -3,7 +3,7 @@
   "brief": 3,
   "condition": "generator_device",
   "model_id": "stabilityai/sd-turbo",
-  "revision": "b261bac6fd2cf515557d5d0707481eafa0485ec2",
+  "revision": "b261bac6fd2cf515557d5070481eafa0485ec2",
   "prompt": "poster concept for a science exhibition, abstract constellation of connected nodes, dark background with white and cyan lines, balanced composition, no text, no logo",
   "seed": 1015,
   "steps": 1,

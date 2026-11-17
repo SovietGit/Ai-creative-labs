@@ -1,0 +1,30 @@
+{
+  "model_id": "stabilityai/sd-turbo",
+  "revision": "b261bac6fd2cf515557d5070481eafa0485ec2",
+  "seed": 1015,
+  "generator_device": "cpu",
+  "dtype": "float16",
+  "environment": {
+    "device": "Tesla T4",
+    "platform": "Linux-6.6.122+-x86_64-with-glibc2.39",
+    "python": "3.13.16",
+    "packages": {
+      "torch": "2.11.0+cu130",
+      "diffusers": "0.39.0",
+      "transformers": "5.20.2",
+      "pillow": "11.3.0"
+    }
+  },
+  "sha256": "bd07f369e95e6616d677b5f69590fb5363fadcb295efc4c55b37b2c683a776c3",
+  "allowance": "PSNR >= 40дБ",
+  "diff": "PSNR < 40дБ",
+  "result": {
+    "generation_seconds": 0.37,
+    "image_size": [
+      512,
+      512
+    ],
+    "image_mode": "RGB"
+  },
+  "max_diff": "5.7882184982299805"
+}

@@ -38,8 +38,6 @@
 - **Пакеты**: Diffusers, Pillow, Torch, Torchao, Torchaudio, Torchcodec, Torchdata, Torchsummary, - - - Torchtune, Torchvision, Transformers 
 - **Учебная библиотека**: lab05_lib.py
 
-**Примечание**: Откат diffusers до версии `0.39.0` сделан для обхода ошибки: `cannot import name 'FqnToConfig' from 'torchao.quantization'`.
-
 ## 5. Ход работы
 
 Перед выполнением основной работы подготовить среду выполнения
@@ -146,6 +144,38 @@ verdict: different
 
 Также в результате выполнения кода были созданы результирующие изображения и помещены в `artifacts/run_015`.
 
+### Сохранение тензоров шума CPU-gen и CUDA-gen
+
+```python
+import numpy as np
+import torch
+import os
+
+SEED = 1015
+LATENT_SHAPE = (1, 4, 64, 64)
+
+os.makedirs("artifacts/run_015/noise", exist_ok=True)
+
+gen_cpu = torch.Generator(device="cpu").manual_seed(SEED)
+noise_cpu = torch.randn(LATENT_SHAPE, generator=gen_cpu, dtype=torch.float32, device="cpu")
+
+gen_cuda = torch.Generator(device="cuda").manual_seed(SEED)
+noise_cuda = torch.randn(LATENT_SHAPE, generator=gen_cuda, dtype=torch.float32, device="cuda")
+
+np.save("artifacts/run_015/noise/noise_cpu.npy",  noise_cpu.numpy())
+np.save("artifacts/run_015/noise/noise_cuda.npy", noise_cuda.cpu().numpy())
+
+diff = (noise_cpu - noise_cuda.cpu()).abs()
+print("equal:", bool(torch.equal(noise_cpu, noise_cuda.cpu())))
+print("max |Δ|:", float(diff.max()))
+print("mean |Δ|:", float(diff.mean()))
+print("std CPU:", float(noise_cpu.std()))
+print("std CUDA:", float(noise_cuda.cpu().std()))
+```
+
+Результат выполнения кода представлен в `artifacts/run_015/noise/`.
+Сохранены два файла `.npy`: `noise_cpu.npy` и `noise_cuda.npy`.
+
 ## 6. Результаты
 
 ### Результат базового запуска с seed и брифом
@@ -155,7 +185,7 @@ verdict: different
 | Поле | Значение |
 |---|---|
 | model_id | stabilityai/sd-turbo |
-| revision | b261bac6fd2cf515557d5d0707481eafa0485ec2 |
+| revision | b261bac6fd2cf515557d5070481eafa0485ec2 |
 | prompt | `poster concept for a science exhibition, …` |
 | seed / steps / guidance_scale / size | 1015 / 1 / 0,0 / 512 |
 | generator_device / dtype | cpu / float16 |
@@ -187,6 +217,18 @@ verdict: different
 | <img src="artifacts/run_015/A_cpu_gen.png" width="450"/> | <img src="artifacts/run_015/B_cuda_gen.png" width="450"/> |
 
 На **обоих** изображениях пары (`A_cpu_gen.png`, `B_cuda_gen.png`) узлы и соединяющие их линии отчётливо читаются на тёмном фоне; общая композиция «созвездие узлов» сохраняется, но конкретное расположение узлов и трассировка линий различаются — визуально это согласуется с разными начальными шумами при одном seed.
+
+### Сохранение тензоров шума CPU-gen и CUDA-gen
+
+```text
+equal: False
+max |Δ|: 5.7882184982299805
+mean |Δ|: 1.1159188747406006
+std CPU: 0.9943642020225525
+std CUDA: 0.9898641705513
+```
+
+Также созданы два файла `noise_cpu.npy` и `noise_cuda.npy` и сохранены в `artifacts/run_015/noise/`.
 
 ## 7. Намеренно введенная типовая ошибка
 
@@ -223,7 +265,37 @@ Seed фиксирует **последовательность чисел ген
 ## 10. Ссылки и индивидуальный вклад
 
 - [Блокнот](src/ai_creative_lab05.ipynb)
+- [Паспорт](reports/passport.json)
 
 ### Индивидуальный вклад
 
 Вся работа выполнена самостоятельно: подготовка среды, запуск модели, написание экспериментальных ячеек, анализ, оформление отчёта.
+
+## 11. Отличия от МУ
+
+- Откат diffusers до версии `0.39.0` сделан для обхода ошибки: `cannot import name 'FqnToConfig' from 'torchao.quantization'`.
+
+
+## 12. Ответы на контрольные вопросы
+
+3. Что фиксирует seed и чего он не фиксирует?
+- Начальное состояение генератора, последовательность чисел в рамках одного и того же генератора и устройства, воспроизводимость в одной и той же среде.
+4. Почему Diffusers рекомендует генератор на CPU?
+- Diffusers рекомендует использовать генератор на CPU, потому что CPU и GPU используют разные алгоритмы генерации случайных чисел.
+5. Почему один объект Generator, переданный в два запуска, даёт разные изображения? Что показала ваша проверка?
+- Объект Generator хранит внутреннее состояние, и каждый вызов pipe(...) «сдвигает» это состояние. Поэтому второй запуск получает уже другую последовательность чисел — и другой шум, а значит, и другое изображение. Проверка показала два разных изображения.
+6. Что доказывает совпадение SHA-256 двух файлов, а что не доказывает?
+- Доказывает: побитовую идентичность файлов, воспроизводимость в зафиксированных условиях, отсутствие скрытых различий. Не доказывает: правильность изображения, воспроизводимость результата в других условиях, факт того, что модель поняла запрос, сходство двух изображений, повреждение файла.
+8. Почему при смене float16 на float32 и одном seed изображения различны, хотя веса те же? Как проверить причину?
+- torch.randn выдаёт разные числа для float16 и float32 при одном и том же seed — различие возникает в начальном шуме, а не в весах или точности вычислений. Проверить это можно экспериментом с одинаковым шумом (generate_fixed_noise).
+
+## 13. Источники
+
+- Карточка и файлы модели stabilityai/sd-turbo на Hugging Face, ревизия b261bac6fd2cf515557d5070481eafa0485ec2; файл LICENSE.md (Stability AI Community License Agreement, 5 июля 2024 г.). Проверено 17.11.2026.
+- Sauer A. и др. Adversarial Diffusion Distillation (arXiv:2311.17042, 28.11.2023). Проверено 17.11.2026: название, первый автор, дата и утверждение о выборке за 1–4 шага.
+- Rombach R. и др. High-Resolution Image Synthesis with Latent Diffusion Models (arXiv:2112.10752). Справочно: конвейер в латентном пространстве.
+- Документация Diffusers, раздел «Reproducibility» (huggingface.co/docs/diffusers/main/en/using-diffusers/reusing_seeds). Проверено 17.11.2026.
+- Документация PyTorch, «Reproducibility» (docs.pytorch.org/docs/2.14/notes/randomness.html). Проверено 17.11.2026.
+- Конспект лекции 3.
+
+
